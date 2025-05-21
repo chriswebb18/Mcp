@@ -136,6 +136,41 @@ LinkedIn MCP supports multiple authentication methods:
 
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
+## Deployment
+
+LinkedIn MCP can be deployed both locally for development and testing, or to Azure for production use.
+
+### Local Deployment
+
+For local development and testing deployment:
+
+1. Ensure you have Docker installed on your machine
+2. Build and start the Docker container:
+   ```bash
+   docker-compose up -d
+   ```
+
+Detailed instructions can be found in our [Local Deployment Guide](deployment/LOCAL_DEPLOYMENT.md).
+
+### Azure Deployment
+
+For production deployment to Azure:
+
+1. Configure your Azure resources using our template
+2. Deploy using Azure Pipeline or GitHub Actions workflow
+
+Detailed instructions can be found in our [Azure Deployment Guide](deployment/AZURE_DEPLOYMENT.md).
+
+### CI/CD Pipeline
+
+Set up continuous integration and deployment:
+
+1. Configure GitHub Actions workflows
+2. Set up deployment environments
+3. Configure approval gates
+
+Detailed instructions can be found in our [CI/CD Setup Guide](deployment/CI_CD_SETUP.md).
+
 ## License
 
 [MIT License](LICENSE)
