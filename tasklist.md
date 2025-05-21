@@ -99,9 +99,31 @@
 
 ## Deployment & Operations
 
-- [ ] Set up deployment automation
+### Local Deployment
+- [ ] Create Docker containerization for local deployment
+- [ ] Implement environment configuration for local setup
+- [ ] Document local deployment steps
+- [ ] Create automated local setup scripts
+
+### Azure Deployment
+- [ ] Set up Azure resources (App Service, Database, etc.)
+- [ ] Configure Azure deployment settings
+- [ ] Implement Azure Application Insights integration
+- [ ] Document Azure deployment process
+- [ ] Create Azure resource templates
+
+### CI/CD Pipeline
+- [ ] Set up GitHub Actions workflows for CI/CD
+- [ ] Create build validation checks
+- [ ] Configure automated testing in pipeline
+- [ ] Implement deployment stages (dev, staging, production)
+- [ ] Add deployment approval gates
+- [ ] Document CI/CD pipeline setup and maintenance
+
+### Operations
 - [ ] Create monitoring and alerting
 - [ ] Implement logging and diagnostics
 - [ ] Add performance optimization
 - [ ] Create backup and recovery procedures
 - [ ] Implement scaling strategy
+- [ ] Set up health checks and error reporting
