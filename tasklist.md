@@ -8,6 +8,8 @@
 - [ ] Create documentation structure
 - [ ] Set up CI/CD pipeline
 - [ ] Configure linting and code formatting
+- [ ] Set up TypeSpec development environment
+- [ ] Configure TypeSpec code generation options
 
 ## Core MCP Implementation
 
@@ -18,6 +20,8 @@
 - [ ] Implement MCP capability declaration
 - [ ] Set up error handling and logging
 - [ ] Create MCP protocol validation layer
+- [ ] Define MCP API using TypeSpec
+- [ ] Generate OpenAPI specifications from TypeSpec definitions
 
 ## LinkedIn API Integration
 
@@ -96,6 +100,9 @@
 - [ ] Create examples and tutorials
 - [ ] Add troubleshooting guides
 - [ ] Create configuration reference
+- [ ] Document TypeSpec models and operations
+- [ ] Create TypeSpec usage guide for contributors
+- [ ] Add TypeSpec-to-implementation mapping documentation
 
 ## Deployment & Operations
 
