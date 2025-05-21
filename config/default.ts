@@ -1,7 +1,10 @@
-export default {
+import { Config } from './types';
+
+const defaultConfig: Config = {
   server: {
     port: process.env.PORT || 3000,
     host: process.env.HOST || 'localhost',
+    logLevel: 'info',
   },
   linkedIn: {
     clientId: process.env.LINKEDIN_CLIENT_ID || '',
@@ -31,5 +34,8 @@ export default {
         description: 'Provides access to LinkedIn resume management features',
       },
     ],
+    debugMode: false,
   },
 };
+
+export default defaultConfig;

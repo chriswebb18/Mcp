@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = {
+const defaultConfig = {
     server: {
         port: process.env.PORT || 3000,
         host: process.env.HOST || 'localhost',
+        logLevel: 'info',
     },
     linkedIn: {
         clientId: process.env.LINKEDIN_CLIENT_ID || '',
@@ -33,5 +34,7 @@ exports.default = {
                 description: 'Provides access to LinkedIn resume management features',
             },
         ],
+        debugMode: false,
     },
 };
+exports.default = defaultConfig;

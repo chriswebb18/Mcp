@@ -1,0 +1,9 @@
+# TypeSpec project configuration
+emit:
+  - "@typespec/openapi3"
+
+options:
+  "@typespec/openapi3":
+    output-file: "../openapi/linkedin-mcp-openapi.yaml"
+    "omit-unreferenced-types": true
+    "nullable-annotation": "nullable"
