@@ -1,0 +1,8 @@
+parameters:
+  emit-metadata: true
+  omit-unreachable-types: true
+
+options:
+  "@typespec/openapi3":
+    emitter-output-dir: openapi
+    file-type: yaml

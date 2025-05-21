@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-LinkedIn MCP is a Model Context Protocol server that enables AI agents, particularly GitHub Copilot in VS Code, to interact with LinkedIn's professional networking services. This server implements the [Model Context Protocol](https://modelcontextprotocol.io/introduction) specification to provide a standardized way for AI agents to access and manipulate LinkedIn data.
+LinkedIn MCP is a Model Context Protocol server that enables AI agents, particularly GitHub Copilot in VS Code, to interact with LinkedIn's professional networking services. This server implements the [Model Context Protocol](https://modelcontextprotocol.io/introduction) specification using TypeSpec to provide a standardized way for AI agents to access and manipulate LinkedIn data.
 
 With LinkedIn MCP, you can:
 - Manage your LinkedIn profile
@@ -13,6 +13,16 @@ With LinkedIn MCP, you can:
 - Submit applications through LinkedIn's Easy Apply feature
 
 This project bridges the gap between AI assistants and LinkedIn's rich professional data ecosystem, enabling more productive workflows for job seeking, networking, and professional development.
+
+### TypeSpec Implementation
+
+This project uses [TypeSpec](https://microsoft.github.io/typespec/) for defining the MCP API. TypeSpec is Microsoft's language for describing APIs in a concise and platform-agnostic way, allowing us to generate OpenAPI specifications, client SDKs, and server stubs from a single source of truth.
+
+Our TypeSpec definitions for the LinkedIn MCP can be found in the `src/typespec` directory and include:
+
+- Data models for LinkedIn entities (profiles, jobs, companies, resumes)
+- API operations for interacting with the LinkedIn platform
+- Common types and utility models
 
 ## LinkedIn API Integration
 
@@ -30,6 +40,7 @@ This MCP server integrates with the [LinkedIn API](https://learn.microsoft.com/e
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v16 or later)
+- [TypeSpec CLI](https://microsoft.github.io/typespec/introduction/installation) (`npm install -g @typespec/compiler`)
 - [LinkedIn Developer Account](https://developer.linkedin.com/)
 - LinkedIn API credentials (Client ID and Client Secret)
 
@@ -61,12 +72,17 @@ This MCP server integrates with the [LinkedIn API](https://learn.microsoft.com/e
 
 ```
 /
-├── src/               # Source code
-│   ├── api/           # LinkedIn API integration
-│   ├── mcp/           # MCP protocol implementation
-│   └── server.js      # Main server file
-├── config/            # Configuration files
-└── tests/             # Test files
+├── src/                         # Source code
+│   ├── api/                     # LinkedIn API integration
+│   ├── mcp/                     # MCP protocol implementation
+│   ├── typespec/                # TypeSpec API definitions
+│   │   ├── models/              # Data models for LinkedIn entities
+│   │   ├── operations/          # API operations definitions
+│   │   └── main.tsp            # Main TypeSpec entry point
+│   └── server.js                # Main server file
+├── config/                      # Configuration files
+├── openapi/                     # Generated OpenAPI specifications
+└── tests/                       # Test files
 ```
 
 ## Getting Started for Users
